@@ -61,3 +61,11 @@ cacheSolve <- function(x, ...) {
     ## Return the matrix
     m
 }
+
+x <-matrix(c(4,3,-2,-1), nrow=2, ncol=2)
+print(x)
+
+cachetest <- makeCacheMatrix(x)
+cachetest$get()
+
+cacheInversa(cachetest)
